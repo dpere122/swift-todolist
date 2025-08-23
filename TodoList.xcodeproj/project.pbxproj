@@ -19,6 +19,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD02F4292E5952C100003D87 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		BDA4E6952E54157D0044B347 /* TodoList */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TodoList; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -44,6 +45,7 @@
 		BDA4E68C2E54157D0044B347 = {
 			isa = PBXGroup;
 			children = (
+				BD02F4292E5952C100003D87 /* .gitignore */,
 				BDA4E6972E54157D0044B347 /* TodoList */,
 				BDA4E6962E54157D0044B347 /* Products */,
 			);
