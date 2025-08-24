@@ -17,5 +17,5 @@ This project runs directly in the terminal and allows you to **add, view, and co
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/TodoList.git
+   git clone https://github.com/dpere122/TodoList.git
    cd TodoList
