@@ -108,7 +108,7 @@ Function will create a new task item.
  - Parameters:
     - taskData: Tuple containing data about the task.
 */
-func createNewTask(taskData:(req:ArraySlice<Substring>,opts:[Substring:Substring])) -> Void{
+@MainActor func createNewTask(taskData:(req:ArraySlice<Substring>,opts:[Substring:Substring])) -> Void{
     let item:todoItem = todoItem(taskName: String(taskData.req[1]),
                                  taskDescription: String(taskData.opts["desc"] ?? "No Description"),
                                  isCompleted: false)
@@ -119,7 +119,7 @@ func createNewTask(taskData:(req:ArraySlice<Substring>,opts:[Substring:Substring
 /**
  Shows a formatted list of current tasks
  */
-func showTasks() -> Void{
+@MainActor func showTasks() -> Void{
     print("Tasks:")
     var indexer = 0
     for todo in todoList{
@@ -136,7 +136,7 @@ func showTasks() -> Void{
 /**
  Starts the wizard to complete a certain task.
  */
-func completeTasks() -> Void {
+@MainActor func completeTasks() -> Void {
     showTasks()
     print("Select which task you want to complete by entering its index number: ")
     if let indexString = readLine(){
